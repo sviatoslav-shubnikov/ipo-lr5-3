@@ -1,8 +1,8 @@
-with open('text.txt', 'r', encoding='utf-8') as file:
+with open('text.txt', 'r', encoding='utf-8') as file: # Открываем файл 'text.txt' в режиме чтения с кодировкой utf-8
     
-    list = file.read()
+    list = file.read() # Читаем содержимое файла и сохраняем его в переменную 'list'
 
-words= list.split()
+words= list.split() # Разбиваем строку 'list' на отдельные слова, используя пробелы в качестве разделителей
 
-length=len(words)
-print(f'Количество слов в файле равно: {length}')
+length=len(words) # Вычисляем количество слов, полученных в результате split(), с помощью функции len()
+print(f'Количество слов в файле равно: {length}') # Выводим количество слов в файле
